@@ -209,19 +209,19 @@
 
   .slide-editor {
     padding: 15px;
-    width: 100%;
+    width: 95%;
     box-sizing: border-box;
   }
 
   .title-input {
     font-size: 17px;
-    width: 100%;
+    width: 95%;
     padding: 10px;
   }
 
   textarea,
   .slide-editor textarea {
-    width: 100%;
+    width: 95%;
     height: 130px;
     font-size: 15px;
     padding: 10px;
