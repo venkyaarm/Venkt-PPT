@@ -1,0 +1,141 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #eef2f7, #e0f2fe);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.typewriter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+  color: #9333ea;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #374151;
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-ai,
+.btn-manual {
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.btn-icon {
+  font-size: 18px;
+}
+
+.btn-ai {
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  color: #fff;
+}
+
+.btn-ai:hover {
+  background: linear-gradient(to right, #4f46e5, #7c3aed);
+}
+
+.btn-manual {
+  background: linear-gradient(to right, #10b981, #22c55e);
+  color: #fff;
+}
+
+.btn-manual:hover {
+  background: linear-gradient(to right, #059669, #16a34a);
+}
+
+.animated-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: floatTitle 3s ease-in-out infinite;
+  line-height: 1.2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@keyframes floatTitle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.brand {
+  color: #0ea5e9;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+
+.gradient-glow {
+  background: linear-gradient(to right, #8b5cf6, #ec4899, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* ------------------ MOBILE VIEW ------------------ */
+@media (max-width: 768px) {
+  .typewriter,
+  .animated-title {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-ai,
+  .btn-manual {
+    width: 90%;
+    font-size: 15px;
+    padding: 12px 20px;
+    justify-content: center;
+  }
+
+  .btn-icon {
+    font-size: 16px;
+  }
+}

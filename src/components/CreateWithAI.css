@@ -1,0 +1,230 @@
+.ai-container {
+  padding: 30px;
+  background: #f9fafb;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ai-title {
+  color: #1e40af;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.ai-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.ai-controls input,
+.ai-controls select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: center;
+}
+
+.ai-controls button {
+  padding: 12px 24px;
+  background: linear-gradient(to right, #4f46e5, #9333ea);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.ai-loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.ai-slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.ai-slide-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.ai-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  margin: 15px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ai-edit-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.ai-export {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ai-export button {
+  background: #10b981;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.ai-controls select,
+.ai-slides input,
+.ai-slides textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 95%;
+  text-align: center;
+}
+
+.template-selection {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.template-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.template-options img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.template-options img.selected,
+.template-options button.selected {
+  border: 2px solid #4f46e5;
+}
+
+.template-options button {
+  padding: 10px 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.ai-slide-card input,
+.ai-slide-card textarea {
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 5px;
+  width: 95%;
+  color: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ============ MOBILE VIEW STYLES ============ */
+@media (max-width: 768px) {
+  .ai-container {
+    padding: 20px 10px;
+  }
+
+  .ai-title {
+    font-size: 24px;
+  }
+
+  .ai-controls {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-controls input,
+  .ai-controls select,
+  .ai-controls button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .ai-slide-card {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .ai-image {
+    max-width: 100%;
+  }
+
+  .ai-export button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .template-options {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .template-options img {
+    width: 90px;
+    height: 60px;
+  }
+
+  .template-options button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .ai-slide-card input,
+  .ai-slide-card textarea {
+    font-size: 14px;
+    width: 100%;
+  }
+}

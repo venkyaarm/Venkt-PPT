@@ -1,0 +1,29 @@
+/* src/App.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #5533ff;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #5533ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+input, textarea {
+  margin: 5px;
+  padding: 10px;
+  width: 300px;
+}
