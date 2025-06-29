@@ -172,59 +172,91 @@
 
 /* ============ MOBILE VIEW STYLES ============ */
 @media (max-width: 768px) {
-  .ai-container {
-    padding: 20px 10px;
+  .manual-container {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  .ai-title {
-    font-size: 24px;
+  h2 {
+    font-size: 20px;
   }
 
-  .ai-controls {
+  .slide-nav {
     flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
   }
 
-  .ai-controls input,
-  .ai-controls select,
-  .ai-controls button {
-    width: 90%;
+  .slide-nav button {
+    width: 100%;
     font-size: 15px;
+    padding: 10px;
   }
 
-  .ai-slide-card {
+  .template-select {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .template-select select {
+    width: 95%;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .slide-editor {
     padding: 15px;
     width: 100%;
+    box-sizing: border-box;
   }
 
-  .ai-image {
-    max-width: 100%;
-  }
-
-  .ai-export button {
+  .title-input {
+    font-size: 17px;
     width: 100%;
-    font-size: 16px;
+    padding: 10px;
+  }
+
+  textarea,
+  .slide-editor textarea {
+    width: 100%;
+    height: 130px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .export-btn,
+  .preview-btn,
+  .delete-btn {
+    width: 100%;
+    margin: 8px 0;
+    font-size: 15px;
     padding: 12px;
   }
 
-  .template-options {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .template-options img {
-    width: 90px;
-    height: 60px;
-  }
-
-  .template-options button {
-    width: 100%;
+  .preview-slide p {
     font-size: 15px;
+    padding: 0 10px;
   }
 
-  .ai-slide-card input,
-  .ai-slide-card textarea {
-    font-size: 14px;
+  .live-preview-box {
+    padding: 10px;
+  }
+
+  .live-slide {
     width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    box-sizing: border-box;
+  }
+
+  .live-slide h3 {
+    font-size: 18px;
+  }
+
+  .preview-slide h3 {
+    font-size: 20px;
   }
 }
